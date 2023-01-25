@@ -37,6 +37,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   spider: ^4.0.0
+  mask_text_input_formatter: ^2.4.0
+  convex_bottom_bar: ^3.1.0+1
+  persistent_bottom_nav_bar: ^5.0.2
 
 dev_dependencies:
   flutter_test:

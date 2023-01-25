@@ -1,6 +1,7 @@
 import 'package:clinic/core/theme/app_colors.dart';
 import 'package:clinic/core/theme/app_fonts.dart';
 import 'package:clinic/resources/resources.dart';
+import 'package:clinic/ui/screen/login_screen.dart';
 import 'package:clinic/ui/widgets/primary_button_widget.dart';
 import 'package:clinic/ui/widgets/profile_item_widget.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.whihe,
+        backgroundColor: AppColors.white,
         title: Text(
           'Профиль',
           style: AppFonts.w600s17.copyWith(color: AppColors.black),
@@ -23,8 +24,12 @@ class ProfileScreen extends StatelessWidget {
             icon: Image.asset(AppImages.settings),
           )
         ],
+        elevation: 0,
       ),
       body: Container(
+        decoration: const BoxDecoration(
+          color: AppColors.white,
+        ),
         padding: EdgeInsets.all(15),
         child: Column(
           children: [
@@ -55,6 +60,9 @@ class ProfileScreen extends StatelessWidget {
               text: 'Войти',
               onPressed: () {
                 print('Enter');
+
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => LoginScreen()));
               },
             )
           ],

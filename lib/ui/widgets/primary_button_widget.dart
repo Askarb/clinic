@@ -26,7 +26,7 @@ class PrimaryButton extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: AppFonts.w600s18.copyWith(color: AppColors.whihe),
+          style: AppFonts.w600s18.copyWith(color: AppColors.white),
         ),
       ),
     );
